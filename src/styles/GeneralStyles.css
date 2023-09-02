@@ -1,0 +1,31 @@
+.primaryText {
+  color: var(--color-quaternary);
+  font-size: 1.5rem;
+}
+
+.secondaryText {
+  color: var(--color-quaternary);
+  font-size: 1rem;
+}
+
+.terciaryText {
+  color: var(--color-quaternary);
+  font-size: .8rem;
+}
+
+.icon {
+  color: var(--color-quaternary);
+  color: red;
+}
+
+.banner {
+  margin: 40px 0 40px 0;
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+/* .container {
+
+} */
+
