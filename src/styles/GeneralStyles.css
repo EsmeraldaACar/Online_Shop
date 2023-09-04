@@ -15,7 +15,6 @@
 
 .icon {
   color: var(--color-quaternary);
-  color: red;
 }
 
 .banner {
@@ -24,8 +23,30 @@
   max-height: 300px;
   overflow: hidden;
   border-radius: 16px;
+  box-shadow: 6px 6px 7px 4px rgba(157,152,152,0.5);
+  -webkit-box-shadow: 6px 6px 7px 4px rgba(157,152,152,0.5);
+  -moz-box-shadow: 6px 6px 7px 4px rgba(157,152,152,0.5);
 }
-/* .container {
 
-} */
+.card {
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  text-align: left;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.productsContainer {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+}
 
