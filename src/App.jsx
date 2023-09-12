@@ -4,6 +4,8 @@ import './styles/GeneralStyles.css'
 import HeaderMenu from './components/HeaderMenu';
 import Banner from './components/Banner';
 import ProductCard from './components/ProductCard';
+import PRODUCTS from './constants/products'
+
 function App() {
   // const [count, setCount] = useState(0)
   return (
@@ -11,13 +13,9 @@ function App() {
       <HeaderMenu />
       <Banner />
       <div className='container productsContainer'>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        { PRODUCTS.map((product, index) => (
+          <ProductCard product={product} key={index} />
+        ))}
       </div>
     </>
   )
