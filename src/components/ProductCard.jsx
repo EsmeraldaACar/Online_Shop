@@ -1,6 +1,9 @@
+import PropTypes from 'prop-types';
 import '../styles/GeneralStyles.css'
 
-function ProductCard() {
+function ProductCard(props) {
+  const { product } = props
+  console.log('product', product)
   return (
     <div className="card">
       <div className="card-image">
@@ -9,15 +12,19 @@ function ProductCard() {
         </figure>
       </div>
       <div className="card-content">
-      <p className="secondaryText is-4">John Smith</p>
+        <p className="secondaryText is-4">{product.nombre}</p>
         <div className="content terciaryText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris.
+          {product.descripcion}
           <br />
         </div>
       </div>
     </div>
   )
 }
+
+ProductCard.propTypes = {
+  product: PropTypes.object.isRequired,
+  // ...
+};
 
 export default ProductCard
