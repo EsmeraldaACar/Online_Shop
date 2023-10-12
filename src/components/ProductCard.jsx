@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import '../styles/GeneralStyles.css'
 
 function ProductCard(props) {
-  const { product } = props
+  const { product, onClick } = props
+
   return (
     <div className="card">
       <div className="card-image">
@@ -18,7 +19,7 @@ function ProductCard(props) {
         </div>
       </div>
       <footer className="card-footer">
-        <button className="card-footer-item">Comprar</button>
+        <button className="card-footer-item" onClick={() => onClick(product)}>Comprar</button>
       </footer>
     </div>
   )
@@ -26,6 +27,7 @@ function ProductCard(props) {
 
 ProductCard.propTypes = {
   product: PropTypes.object.isRequired,
+  onClick: PropTypes.func.isRequired,
   // ...
 };
 
